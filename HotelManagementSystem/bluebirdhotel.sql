@@ -18,17 +18,17 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `bluebirdhotel`
--- User: `bluebird_user`
+-- Database: `kingshotel`
+-- User: `kings_user`
 -- Password:   `password`
 --
-DROP DATABASE IF EXISTS bluebirdhotel;
-CREATE DATABASE IF NOT EXISTS bluebirdhotel;
+DROP DATABASE IF EXISTS kingshotel;
+CREATE DATABASE IF NOT EXISTS kingshotel;
 
-DROP USER IF EXISTS'bluebird_user'@'%';
-CREATE USER IF NOT EXISTS 'bluebird_user'@'%' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON bluebirdhotel.* TO 'bluebird_user'@'%';
-USE bluebirdhotel;
+DROP USER IF EXISTS'kings_user'@'%';
+CREATE USER IF NOT EXISTS 'kings_user'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON kingshotel.* TO 'kings_user'@'%';
+USE kingshotel;
 
 -- --------------------------------------------------------
 
@@ -77,7 +77,7 @@ CREATE TABLE `payment` (
 --
 
 INSERT INTO `payment` (`id`, `Name`, `Email`, `RoomType`, `Bed`, `NoofRoom`, `cin`, `cout`, `noofdays`, `roomtotal`, `bedtotal`, `meal`, `mealtotal`, `finaltotal`) VALUES
-(41, 'Tushar pankhaniya', 'pankhaniyatushar9@gmail.com', 'Single Room', 'Single', 1, '2022-11-09', '2022-11-10', 1, 1000.00, 10.00, 'Room only', 0.00, 1010.00);
+(41, 'lohith', 'lohith9@gmail.com', 'Single Room', 'Single', 1, '2022-11-09', '2022-11-10', 1, 1000.00, 10.00, 'Room only', 0.00, 1010.00);
 
 -- --------------------------------------------------------
 
